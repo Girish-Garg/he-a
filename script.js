@@ -1,7 +1,5 @@
 const lade = document.getElementById('loader');
 setTimeout(() => {
-    lade.style.transition = 'all 0.2'
-    lade.style.opacity =0;
-   
+    lade.style.display = "none"
     document.getElementById('main').style.display = "block";
 }, 7000);
