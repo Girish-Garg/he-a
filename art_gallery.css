@@ -1,0 +1,61 @@
+#Art_gallery_shery{
+    width: 100%;
+    height: 100vh;
+    background-color: #e6deda;
+    position: relative;
+    z-index: 3;
+}
+.inline_text{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: space-between;
+    height: 22vh;
+    overflow: hidden;
+}
+.inline_text > h1{
+    font-size: 30px;
+    padding-top: 70px;
+    font-weight: 550;
+}
+.inline_text > p{
+    width: 30%;
+    text-align: right;
+    font-size: 13px;
+    padding-top: 80px;
+    font-weight: 400;
+}
+#grid_sections{
+    width: 100%;
+    height: 78vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr); 
+    grid-template-rows: repeat(2,1fr); 
+}
+
+.sections{
+    border-bottom: .1rem solid rgba(53, 53, 53, .2);
+    border-right: .1rem solid rgba(53, 53, 53, .2);
+    position: relative;
+}
+
+.sections::after{
+    background: #fff;
+    content: "";
+    height: .1rem;
+    left: 0;
+    opacity: .6;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.sections::before{
+    background: #fff;
+    content: "";
+    height: 100%;
+    right: 0;
+    opacity: .6;
+    position: absolute;
+    bottom: 0;
+    width: 0.1rem;
+}

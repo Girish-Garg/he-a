@@ -1,88 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indian Foundation for Arts</title>
-    <meta name="description" content="IFA is an NGO working towards improving the art culture of our beautiful country india">
+    <meta name="description"
+        content="IFA is an NGO working towards improving the art culture of our beautiful country india">
     <link rel="icon" type="image/png" sizes="32x32" href="./sources/logo.png">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="hero.css">
     <link rel="stylesheet" href="img_pin.css">
+    <link rel="stylesheet" href="art_gallery.css">
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.0/build/spline-viewer.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-<style>
-#header_after{
-    background-color: black !important;
-}
-</style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        #header_after {
+            background-color: black !important;
+        }
+    </style>
 </head>
 <body>
-    
     <header>
-        
-        <div id = "Header_img">
+        <div id="Header_img">
             <img src="./sources/logo.png" alt="">
         </div>
-        <div id = "Header_title">
+        <div id="Header_title">
             <h3>India Foundation for the Art</h3>
         </div>
-        <div id = "Header_end">
-            <h3 id="text"><span>HI</span> | <span>EN</span></h3>
-            <svg id="e1oi2mnWSwv1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><path d="M75.456125,79.235447h153.258037-153.258037Z" transform="translate(.000002 38.698117)" stroke="#000" stroke-width="2"/><path d="M75.456125,79.235447h153.258037-153.258037Z" transform="translate(.000002 88.231705)" stroke="#000" stroke-width="2"/></svg>
+        <div id="Header_end">
+            <h3 id="text"><span id="s1" data-selected="false">HI</span> | <span id="s2" data-selected="true">EN</span>
+            </h3>
+            <svg id="e1oi2mnWSwv1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 300 300" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                <path d="M75.456125,79.235447h153.258037-153.258037Z" transform="translate(.000002 38.698117)"
+                    stroke="#000" stroke-width="2" />
+                <path d="M75.456125,79.235447h153.258037-153.258037Z" transform="translate(.000002 88.231705)"
+                    stroke="#000" stroke-width="2" />
+            </svg>
         </div>
     </header>
-    <section id = "loader" style="position: relative;z-index: 3;height: 100vh;width: 100%; overflow: hidden;">
-        <spline-viewer url="https://prod.spline.design/i3D6q3aSecGPcIrX/scene.splinecode" style="height: 107vh;"></spline-viewer>
+    <section id="loader" style="position: relative;z-index: 3;height: 100vh;width: 100%; overflow: hidden;">
+        <spline-viewer url="https://prod.spline.design/i3D6q3aSecGPcIrX/scene.splinecode"
+            style="height: 107vh;"></spline-viewer>
     </section>
     <div id="main" style="display: none;">
-    <section id="hero">  
-      <h1>
-        Foundation for the Art
-      </h1>
-      <p>
-       <span>CELEBRATING -
-        </span> 
-        25 YEARS OF OUR INDIAN <br>
-        CONTRIBUTION TO ART
-      </p>
-      <svg width="" height="25" viewBox="0 0 8 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M3.64645 24.3536C3.84171 24.5488 4.15829 24.5488 4.35355 24.3536L7.53553 21.1716C7.7308 20.9763 7.7308 20.6597 7.53553 20.4645C7.34027 20.2692 7.02369 20.2692 6.82843 20.4645L4 23.2929L1.17157 20.4645C0.976311 20.2692 0.659728 20.2692 0.464466 20.4645C0.269204 20.6597 0.269204 20.9763 0.464466 21.1716L3.64645 24.3536ZM3.5 0L3.5 24H4.5L4.5 0L3.5 0Z" fill="black"/>
-        </svg>
-     <h2>SCROLL DOWN</h2>
-     </section>
-     <section id="spline_stuff" style="position: fixed;z-index: 1!important; width: 100%; top:0;" >
-          <div style="position: relative; width: 100%; height: 100vh;z-index: 1!important;  ">
-        <spline-viewer url="https://prod.spline.design/ub9TjzuTFEVRtLwU/scene.splinecode" style="scale: 1; height: 107vh;"></spline-viewer>
-    </div> 
-    <section style="height: 100vh;width: 100%;"></section>
-     </section>
-      <section id="Image_pin" style="position: relative; margin-top: 100vh;">
-       <div id="img_half"></div>
-       <div id="overflow">
-        <div id ="one01" style="display: flex; justify-content: space-between; width: 100%; padding-bottom: 1.5rem ; border-bottom: .1rem solid rgba(53, 53, 53, .2);">
-            <p style="width: 40% ;">WHAT WILL THE FOUNDATION DO?</p>
-            <h3 style="width: 60%; margin-right: 20px; padding-top: 20px; font-weight: 400;text-transform: uppercase; letter-spacing: -.05rem;line-height: 140%;">We believe that the arts and culture are essential to our individual and community lives, and for a more equitable and just world. It gives meaning to our existence and enables us to enquire into our past, critique our present and imagine collective futures. It connects us through shared experiences—to question, resist, and build. The arts make us human, make us more.</h3>
-        </div>
-        <div  style="margin-top: 15px; display: flex; justify-content: space-between; width: 100%; padding-bottom: 1.5rem ; border-bottom: .1rem solid rgba(53, 53, 53, .2);">
-            <p style="width: 40% ;">WHAT WILL THE FOUNDATION DO?</p>
-            <h3 style="width: 60%; margin-right: 20px; padding-top: 20px; font-weight: 400;text-transform: uppercase; letter-spacing: -.05rem;line-height: 140%;">We believe that the arts and culture are essential to our individual and community lives, and for a more equitable and just world. It gives meaning to our existence and enables us to enquire into our past, critique our present and imagine collective futures. It connects us through shared experiences—to question, resist, and build. The arts make us human, make us more.</h3>
-        </div>
-        <div  style="margin-top: 15px; display: flex; justify-content: space-between; width: 100%; padding-bottom: 1.5rem ; border-bottom: .1rem solid rgba(53, 53, 53, .2);">
-            <p style="width: 40% ;">WHAT WILL THE FOUNDATION DO?</p>
-            <h3 style="width: 60%; margin-right: 20px; padding-top: 20px; font-weight: 400;text-transform: uppercase; letter-spacing: -.05rem;line-height: 140%;">We believe that the arts and culture are essential to our individual and community lives, and for a more equitable and just world. It gives meaning to our existence and enables us to enquire into our past, critique our present and imagine collective futures. It connects us through shared experiences—to question, resist, and build. The arts make us human, make us more.</h3>
-        </div>
-        <div  style="margin-top: 15px; display: flex; justify-content: space-between; width: 100%; padding-bottom: 1.5rem ; border-bottom: .1rem solid rgba(53, 53, 53, .2);">
-            <p style="width: 40% ;">WHAT WILL THE FOUNDATION DO?</p>
-            <h3 style="width: 60%; margin-right: 20px; padding-top: 20px; font-weight: 400;text-transform: uppercase; letter-spacing: -.05rem;line-height: 140%;">We believe that the arts and culture are essential to our individual and community lives, and for a more equitable and just world. It gives meaning to our existence and enables us to enquire into our past, critique our present and imagine collective futures. It connects us through shared experiences—to question, resist, and build. The arts make us human, make us more.</h3>
-        </div>
-        <div id="img_half" style="width: 100% !important; margin-left: 0 !important;height: 94vh !important; overflow: hidden;"></div>
-       </div>
-      </section>
-      <section style="height: 100vh;width: 100%;"></section>
+        <section id="hero">
+            <h1>
+                Foundation for the Art
+            </h1>
+            <p>
+                <span>CELEBRATING -
+                </span>
+                25 YEARS OF OUR INDIAN <br>
+                CONTRIBUTION TO ART
+            </p>
+            <svg width="" height="25" viewBox="0 0 8 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M3.64645 24.3536C3.84171 24.5488 4.15829 24.5488 4.35355 24.3536L7.53553 21.1716C7.7308 20.9763 7.7308 20.6597 7.53553 20.4645C7.34027 20.2692 7.02369 20.2692 6.82843 20.4645L4 23.2929L1.17157 20.4645C0.976311 20.2692 0.659728 20.2692 0.464466 20.4645C0.269204 20.6597 0.269204 20.9763 0.464466 21.1716L3.64645 24.3536ZM3.5 0L3.5 24H4.5L4.5 0L3.5 0Z"
+                    fill="black" />
+            </svg>
+            <h2>SCROLL DOWN</h2>
+        </section>
+        <section id="spline_stuff" style="position: fixed;z-index: 1!important; width: 100%; top:0;">
+            <div id="main_anim" style="position: relative; width: 100%; height: 100vh;z-index: 1!important;  ">
+                <spline-viewer url="https://prod.spline.design/ub9TjzuTFEVRtLwU/scene.splinecode"
+                    style="scale: 1; height: 107vh;"></spline-viewer>
+            </div>
+            <section id="bigf" style="width: 100%;height: 100vh;">
+                <img src="https://images.unsplash.com/photo-1529690840038-f38da8894ff6?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" style="object-fit:cover; height: 100vh; width: 100%; object-position:center;">
+            </section>    
+        </section>
+        <section id="Image_pin" style="position: relative; margin-top: 100vh;">
+            <div id="img_half"></div>
+            <div id="overflow">
+                <div class="border_glow" id="one01">
+                    <p style="width: 40% ;">WHAT DOES THE FOUNDATION DO?</p>
+                    <h3
+                        style="width: 60%; margin-right: 20px; padding-top: 20px; font-weight: 400;text-transform: uppercase; letter-spacing: -.05rem;line-height: 140%;">
+                        We are an independent, nationwide, not-for-profit, organisation that makes grants and implements
+                        projects across practice, research and education in the arts and culture in India. Set up as a
+                        Public Charitable Trust in 1993, We started making grants and implementing projects in 1995.
+                        Since then, we have supported and implemented over 800 projects, disbursing over Rs 36.51 crore
+                        (USD 4.44 million) across the country. </h3>
+                </div>
+                <div class="border_glow">
+                    <p style="width: 40% ;font-weight: 550;font-size: 25px;">01</p>
+                    <h3
+                        style="width: 60%; margin-right: 20px; padding-top: 20px; font-weight: 400;text-transform: uppercase; letter-spacing: -.05rem;line-height: 140%;">
+                        We believe that the arts and culture are essential to our individual and community lives, and
+                        for a more equitable and just world. It gives meaning to our existence and enables us to enquire
+                        into our past, critique our present and imagine collective futures. It connects us through
+                        shared experiences—to question, resist, and build. The arts make us human, make us more.</h3>
+                </div>
+                <div class="border_glow">
+                    <p style="width: 40% ;font-weight: 550;font-size: 25px;">02</p>
+                    <h3
+                        style="width: 60%; margin-right: 20px; padding-top: 20px; font-weight: 400;text-transform: uppercase; letter-spacing: -.05rem;line-height: 140%;">
+                        We support and implement critical work that challenges dominant narratives and speaks truth to
+                        power. We focus on journeys that seek unheard voices and untold stories, which are often ignored
+                        or erased. As a facilitator, catalyst and provocateur in the field, we embark on and enable
+                        investigations, explorations, and experiments that push the boundaries of knowledge and
+                        practice.</h3>
+                </div>
+                <div class="border_glow">
+                    <p style="width: 40% ;font-weight: 550;font-size: 25px;">03</p>
+                    <h3
+                        style="width: 60%; margin-right: 20px; padding-top: 20px; font-weight: 400;text-transform: uppercase; letter-spacing: -.05rem;line-height: 140%;">
+                        We support and implement projects under five key programmes—Arts Research, Arts Practice, Arts
+                        Education, Archives and Museums, and Project 560, especially encouraging work in Indian
+                        languages other than English..</h3>
+                </div>
+                <div id="img_half"
+                    style="width: 100% !important; margin-left: 0 !important;height: 94vh !important; overflow: hidden;">
+                </div>
+            </div>
+        </section>
+        <section style="width: 100%;height: 100vh;"></section>
+        <section id="Art_gallery_shery">
+            <div class="inline_text">
+                <h1>ART GALLERY</h1>
+                <p>
+                    "Experience the essence of Indian artistry at the India Foundation of Art's gallery. Marvel at a
+                    curated collection that celebrates our rich cultural heritage and modern creative expressions. Each
+                    piece tells a unique story, reflecting the vibrant tapestry of Indian art."
+                </p>
+            </div>
+            <div id="grid_sections">
+                    <div class="sections" id = "o1">
+
+                    </div>
+                    <div class="sections" id = "o2">
+
+                    </div>
+                    <div class="sections" id = "o3"> 
+
+                    </div>
+                    <div class="sections" id = "o4"> 
+
+                    </div>
+                    <div class="sections" id = "o5"> 
+
+                    </div>
+                    <div class="sections" id = "o6"> 
+
+                    </div>
+                    <div class="sections" id = "o7"> 
+
+                    </div>
+                    <div class="sections" id = "o8"> 
+
+                    </div>
+            </div>
+        </section>
+
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>

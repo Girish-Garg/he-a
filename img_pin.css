@@ -1,22 +1,22 @@
-#Image_pin{
-    padding-top: 20px;
-    margin-top: 20px;
-    width: 100%;
-    height: fit-content;
-    background-color: #e6deda ;
-    display: flex;
-    position: relative;
-    z-index: 3;
-
-    border-top: .1rem solid rgba(53, 53, 53, .2);
-    border-top-width: 0.1rem;
-    border-top-style: solid;
-    border-top-color: rgba(53, 53, 53, 0.2);
+#Image_pin {
+   padding-top: 20px;
+   margin-top: 20px;
+   padding-bottom: 20px;
+   width: 100%;
+   height: fit-content;
+   background-color: #e6deda;
+   display: flex;
+   position: relative;
+   z-index: 3;
+   border-top: .1rem solid rgba(53, 53, 53, .2);
+   border-top-width: 0.1rem;
+   border-top-style: solid;
+   border-top-color: rgba(53, 53, 53, 0.2);
 }
 
-#img_half{
+#img_half {
    position: sticky;
-   top:60px;
+   top: 60px;
    width: 45%;
    margin-left: 50px;
    height: 95vh;
@@ -24,25 +24,54 @@
    background-position: center;
    background-image: url('https://images.unsplash.com/photo-1578301978162-7aae4d755744?q=80&w=2477&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 }
- #overflow{
-    margin-top: 10px;
-    padding-left: 20px;
-    position: relative;
-    top:0;
-    width:50%;
-    height: 100%;
- }
 
- #overflpw > p{
-    font-size: 1.3rem;
- }
- #Image_pin:after{
-    background: #fff;
-    content: "";
-    height: .1rem;
-    left: 0;
-    opacity: .6;
-    position: absolute;
-    top: 0;
-    width: 100%;
- }
+#overflow {
+   margin-top: 10px;
+   padding-left: 20px;
+   position: relative;
+   top: 0;
+   margin-right: 50px;
+   width: 50%;
+   height: 100%;
+}
+
+#overflow>p {
+   font-size: 1.3rem;
+}
+
+#Image_pin:after {
+   background: #fff;
+   content: "";
+   height: .1rem;
+   left: 0;
+   opacity: .6;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
+.border_glow {
+   margin-top: 15px;
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   padding-bottom: 1.5rem;
+   border-bottom: .1rem solid rgba(53, 53, 53, .2);
+   border-bottom: .1rem solid rgba(53, 53, 53, .2);
+   position: relative;
+}
+
+.border_glow:after {
+   background: #fff;
+   bottom: -.2rem;
+   content: "";
+   height: .1rem;
+   left: 0;
+   opacity: .6;
+   position: absolute;
+   width: 100%;
+}
+
+#s1{
+   font-weight: 300;
+}
