@@ -14,7 +14,6 @@
 }
 
 #spline-viewer_r {
-    scale: 1;
     height: 107vh;
 }
 
@@ -54,20 +53,26 @@
 }
 
 .main_img_dat img {
+    top: 50%;
+    
+    -webkit-mask-image: url('https://makhnostudio.com/wp-content/uploads/2022/10/3_3d_Element.webp');
     mask-image: url('https://makhnostudio.com/wp-content/uploads/2022/10/3_3d_Element.webp');
     position: relative;
     left: 50%;
-    transform: translate(-50%, 20%);
+    transform: translate(-50%, -80%);
+    -webkit-mask-position: center;
     mask-position: center;
     width: 15vw;
+    -webkit-mask-size: 20vw;
     mask-size: 20vw;
+    -webkit-mask-repeat: none;
     mask-repeat: none;
     mask-type: alpha;
     filter: brightness(0.9);
 }
 .footer {
     display: flex;
-    flex-direction: column;
+    gap: 5%;
     height: 100vh;
     overflow: hidden;
     position: relative;
@@ -75,8 +80,9 @@
     top: 0;
     width: 100%;
     z-index: 2;
+    padding: 15px;
+    padding-bottom: 30px;
 }
-
 .footer:after, .footer__bottom:after {
     background: #fff;
     content: "";
@@ -92,4 +98,75 @@
     position: relative;
 }
 
+.left, .left2 , .right2 {
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    font-size: 14px;
+}
+.end,.tnc,.by{
+    position: absolute;
+    top: 25vh;
+}
+.tnc{
+    font-size: 12px;
+    border-bottom: 1.5px solid rgba(35, 35, 35, 0.525);;
+    color: rgba(35, 35, 35, 0.651);
+}
+.cdetail{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 
+.right2{
+    width: 20%;
+}
+.links{
+    border-bottom: 1.5px solid black;
+    display: inline-block;
+}
+.right{
+    flex-direction: column;
+    display: flex;
+    margin-left: 15rem;
+}
+.top-c{
+    border-bottom: 1.5px solid black;
+    display: flex;
+    gap: 6vw;
+    margin-top: 15px;
+}
+.by,.us{
+    text-wrap: nowrap;
+}
+.by{
+    font-size: 14px;
+}
+.right img{
+    transform: rotate(-0.25turn);
+}
+
+.cdetail span {
+    border-bottom: 1.5px solid black;
+    margin-right: 3px;
+}
+.detail{
+    border-bottom: 1.5px solid black;
+}
+
+.ispan:hover::after{
+    content: '';
+    width: 100%;
+}
+
+.ispan::after{
+    content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s ease-in-out;
+}
