@@ -30,7 +30,22 @@ header{
      color: black;
      transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-
+.mouse-follower {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 50;
+    width: 5vw;
+    height: 5vw;
+    background-color : black; /* Yellow color, change as desired */
+    border-radius: 50%; /* Circular shape */
+    transform-origin: center center;
+    transform: translate(-50%,-50%);
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1); /* Smooth transition */
+}
+.mainas {
+    opacity: 1;
+}
 .header_after{
     background-color: black;
     color: white !important;
