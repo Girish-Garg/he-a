@@ -1,6 +1,7 @@
 #Image_pin {
+   position: relative;
+   margin-top: 100vh;
    padding-top: 20px;
-   margin-top: 20px;
    padding-bottom: 20px;
    width: 100%;
    height: fit-content;
