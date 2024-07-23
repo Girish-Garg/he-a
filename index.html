@@ -27,9 +27,9 @@
 </head>
 
 <body>
-
+    
     <header>
-
+      
         <div id="Header_img">
             <img src="./sources/logo.png" alt="">
         </div>
@@ -48,14 +48,15 @@
             </svg>
         </div>
     </header>
-
-    <!-- <section id="loader" style="position: relative;z-index: 3;height: 100vh;width: 100%; overflow: hidden;">
+   
+    <section id="loader" style="position: relative;z-index: 3;height: 100vh;width: 100%; overflow: hidden;">
         <spline-viewer url="https://prod.spline.design/i3D6q3aSecGPcIrX/scene.splinecode"
             style="height: 107vh;"></spline-viewer>
-    </section> -->
-    <div id="main">
+    </section>
+    <div id="main" style="display: none;">
 
         <section id="hero">
+
             <h1 class="h1_hero">
                 Foundation for the Art
             </h1>
@@ -73,10 +74,10 @@
             <h2>SCROLL DOWN</h2>
         </section>
         <section id="spline_stuff">
-            <!-- <div id="main_anim">
+            <div id="main_anim">
                 <spline-viewer id="spline-viewer_r"
                     url="https://prod.spline.design/ub9TjzuTFEVRtLwU/scene.splinecode"></spline-viewer>
-            </div> -->
+            </div>
             <section id="big_img">
                 <img src="https://images.unsplash.com/photo-1529690840038-f38da8894ff6?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="">
@@ -84,7 +85,8 @@
             <section id="footer_r">
                 <div class="main_img_dat">
                     <p><span>India Foundation</span><br>for the Arts</p>
-                    <img class="img_1" src="sources/back.jpg" alt="" />
+                    <img class = "img_1" src="sources/back.jpg"
+                        alt=""/>
 
                 </div>
                 <div class="footer">
@@ -164,12 +166,23 @@
                         Education, Archives and Museums, and Project 560, especially encouraging work in Indian
                         languages other than English..</h3>
                 </div>
-                <div id="img_half_1">
+                <div id="img_half_1" style="position: relative; overflow: hidden;"  >
                     <div style="display: flex; align-items: center;justify-content: center;" class="mouse-follower">
-                        <p style="text-align: center; color: white;">h</p>
+                        <p style="text-align: center; color: white;" >h</p>
                     </div>
-                    <img id="img_scroller" src="sources/back.jpg"
-                        style="height:100%; object-fit: cover; width: 100% !important;" alt="" srcset="">
+                    <img id="img_scroller_5" data-img="05"  src="https://images.unsplash.com/photo-1594136976553-38699ae9047c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHBhaW50aW5nfGVufDB8fDB8fHww" style="position: absolute; z-index: 1; top:0; height:100%; object-fit: cover; width: 100% !important;" alt="" srcset="">
+                    <img id="img_scroller_4" data-img="04"  src="https://images.unsplash.com/photo-1579541814924-49fef17c5be5?q=80&w=1870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="position: absolute; z-index: 2; top:0; height:100%; object-fit: cover; width: 100% !important;" alt="" srcset="">
+                    <img id="img_scroller_3" data-img="03"  src="https://images.unsplash.com/photo-1714250175929-5c43feca4171?q=80&w=1924&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="position: absolute; z-index: 3; top:0; height:100%; object-fit: cover; width: 100% !important;" alt="" srcset="">
+                    <img id="img_scroller_2" data-img="02"  src="https://images.unsplash.com/photo-1720557961912-c82d07755486?q=80&w=1889&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="position: absolute; z-index: 4; top:0; height:100%; object-fit: cover; width: 100% !important;" alt="" srcset="">
+                    <img id="img_scroller_1" data-img="01"   src="sources/back.jpg" style="position: absolute; z-index: 5; top:0; height:100%; object-fit: cover; width: 100% !important; " alt="" srcset="">
+                    <div style="position: absolute; bottom: 40px; color: white; right: 10px; font-size: 24px; z-index: 6;"><h1 style="position: relative; z-index: 6 !important;"><span id="main_counter">01</span>/<span>05</span></h1></div>
+                    <div style="position:absolute; bottom: 15px;right: 10px;display: flex;gap: 10px; z-index: 6; ">
+                    <div data-img="01" id="circles1" style="width: 15px; height: 15px; background-color: violet; border-radius: 50%; cursor: pointer,default;"></div>
+                    <div data-img="02" id="circles2" style="width: 15px; height: 15px; background-color: white; border-radius: 50%; cursor: pointer,default;"></div>
+                    <div data-img="03" id="circles3" style="width: 15px; height: 15px; background-color: white; border-radius: 50%; cursor: pointer,default;"></div>
+                    <div data-img="04" id="circles4" style="width: 15px; height: 15px; background-color: white; border-radius: 50%; cursor: pointer,default;"></div>
+                    <div data-img="05" id="circles5" style="width: 15px; height: 15px; background-color: white; border-radius: 50%; cursor: pointer,default;"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -282,12 +295,12 @@
                 </div>
             </div>
         </section>
-        <section style=" position: relative; width: 100%; height: 100vh; z-index: 0;">
+     <section style= " position: relative; width: 100%; height: 100vh; z-index: 0;">
 
-        </section>
+     </section>
     </div>
 
-    <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+    <script  type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script> 
     <script src="script.js"></script>
 </body>
 
