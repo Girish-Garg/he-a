@@ -30,11 +30,29 @@
 #hero p>span{
     font-style: italic;
     font-weight: 600;
+    transition: transform 0.5s ease-in-out;
 }
 
 #hero svg{
     position: relative;
     top:70%
+
+}
+#hero svg:hover {
+    animation: moveDown 0.5s forwards;
+    animation-iteration-count: 3;
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(7px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 #hero h2{
