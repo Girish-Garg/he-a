@@ -1,95 +1,203 @@
 #spline_stuff {
-    position: fixed;
-    z-index: 1 !important;
-    width: 100%;
-    top: 0;
-    height: 100vh   ;
+  position: fixed;
+  z-index: 1 !important;
+  width: 100%;
+  top: 0;
+  height: 100vh;
 }
 
 #main_anim {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    z-index: 1 !important;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 1 !important;
 }
 
 #spline-viewer_r {
-    scale: 1;
-    height: 107vh;
+  height: 107vh;
 }
 
 #big_img {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
 
 #big_img img {
-    object-fit: cover;
-    height: 100vh;
-    width: 100%;
-    object-position: center;
+  object-fit: cover;
+  height: 100vh;
+  width: 100%;
+  object-position: center;
 }
-#footer_r{
-    width: 100%;
-    height: 100vh;
-    background-color: #e6deda;
-    position: relative;
-    z-index: 1 !important;
+#footer_r {
+  width: 100%;
+  height: 100vh;
+  background-color: #e6deda;
+  position: relative;
+  z-index: 1 !important;
 }
-.main_img_dat{
-    width: 100%;
-    height: 70vh;
-    color: black;   
+.main_img_dat {
+  width: 100%;
+  height: 70vh;
+  color: black;
 }
 
-.main_img_dat p{
-    position: relative;
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: bold;
-    
-    top:50%;
-    text-align: center;
-    transform: translate(0,-40%);
+.main_img_dat p {
+  position: relative;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  top: 50%;
+  text-align: center;
+  transform: translate(0, -40%);
 }
 
 .main_img_dat img {
-    mask-image: url('https://makhnostudio.com/wp-content/uploads/2022/10/3_3d_Element.webp');
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 20%);
-    mask-position: center;
-    width: 15vw;
-    mask-size: 20vw;
-    mask-repeat: none;
-    mask-type: alpha;
-    filter: brightness(0.9);
+  top: 50%;
+
+  -webkit-mask-image: url("https://makhnostudio.com/wp-content/uploads/2022/10/3_3d_Element.webp");
+  mask-image: url("https://makhnostudio.com/wp-content/uploads/2022/10/3_3d_Element.webp");
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  -webkit-mask-position: center;
+  mask-position: center;
+  width: 15vw;
+  -webkit-mask-size: 20vw;
+  mask-size: 20vw;
+  -webkit-mask-repeat: none;
+  mask-repeat: none;
+  mask-type: alpha;
+  filter: brightness(0.9);
 }
 .footer {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  text-transform: uppercase;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  padding: 15px;
+  padding-bottom: 30px;
+}
+.footer:after,
+.footer__bottom:after {
+  background: #fff;
+  content: "";
+  height: 0.1rem;
+  left: 0;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.footer,
+.footer__bottom {
+  border-top: 0.1rem solid rgba(53, 53, 53, 0.2);
+  position: relative;
+}
+.father {
+  display: flex;
+  gap: 7%;
+  width: 100%;
+}
+
+.toopa {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+.left,
+.right2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  justify-content: space-between;
+  height: 29%;
+}
+.tnc {
+  font-size: 12px;
+  border-bottom: 1.5px solid rgba(35, 35, 35, 0.525);
+  color: rgba(35, 35, 35, 0.651);
+}
+.cdetail {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.right2 {
+  width: 30%;
+}
+.links {
+  border-bottom: 1.5px solid black;
+  display: inline-block;
+}
+.right {
+  flex-direction: column;
+  display: flex;
+  height: 29%;
+  justify-content: space-between;
+  width: 20%;
+}
+.top-c {
+  border-bottom: 1.5px solid black;
+  display: flex;
+  gap: 6vw;
+  margin-top: 2%;
+}
+.by {
+  font-size: 14px;
+  position: relative;
+}
+.right img {
+  transform: rotate(-0.25turn);
+}
+
+.cdetail span {
+  margin-right: 3px;
+}
+
+.contect{
     position: relative;
-    text-transform: uppercase;
-    top: 0;
-    width: 100%;
-    z-index: 2;
+}
+.ispan:hover::after {
+  content: "";
+  width: 100%;
 }
 
-.footer:after, .footer__bottom:after {
-    background: #fff;
-    content: "";
-    height: .1rem;
-    left: 0;
-    opacity: .6;
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-.footer, .footer__bottom {
-    border-top: .1rem solid rgba(53, 53, 53, .2);
-    position: relative;
+.ispan::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s ease-in-out;
 }
 
+@media screen and (max-width: 780px) {
+    .left2{
+        display: none;
+    }
+}
 
+@media screen and (max-width: 651px) {
+    .tnc{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .right{
+        display: none;
+    }
+    .father{
+        justify-content: space-between;
+    }
+}
