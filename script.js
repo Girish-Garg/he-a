@@ -40,12 +40,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const mouseFollower = document.querySelector('.mouse-follower');
+    Shery.imageMasker("#img_half_1" /* Element to target.*/, {
+        //Parameters are optional.
+        mouseFollower: false,
+       
+        ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+        duration: 1,
+      });
     document.getElementById('img_half_1').addEventListener('mousemove', (e) => {
         var rect = document.getElementById('img_half_1').getBoundingClientRect();
         var x1 = e.clientX - rect.left;
         const x = e.clientX - rect.left - mouseFollower.clientWidth / 2;
         const y = e.clientY - rect.top - mouseFollower.clientHeight / 2;
-
         mouseFollower.style.transform = `translate(${x}px, ${y}px)`;
         mouseFollower.style.opacity = "1";
         if (x1 >= (rect.width) / 2) {
@@ -58,16 +64,16 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('img_half_1').addEventListener('mouseleave', (e) => {
         mouseFollower.style.opacity = "0";
     })
-    let nfirst = false;
-    let nlast = true;
+    // let nfirst = false;
+    // let nlast = true;
     document.getElementById('img_half_1').addEventListener('mousemove', (e) => {
+
         var rect = document.getElementById('img_half_1').getBoundingClientRect();
         var x1 = e.clientX - rect.left;
         const x = e.clientX - rect.left - mouseFollower.clientWidth / 2;
         const y = e.clientY - rect.top - mouseFollower.clientHeight / 2;
         mouseFollower.style.transform = `translate(${x}px, ${y}px)`;
         mouseFollower.style.opacity = "1";
-
         if (x1 >= (rect.width) / 2) {
             mouseFollower.getElementsByTagName('p')[0].innerHTML = "→"
         }
