@@ -85,6 +85,10 @@
     object-fit: cover;
     width: 80%;
 }
+.img11{
+    width: 100%;
+    height: 310px;
+}
 
 .bottom {
     display: flex;
@@ -111,6 +115,9 @@
 @media screen and (max-width: 920px) {
     .sections{
         width: 33.33%;
+    }
+    .inline_text{
+        flex-direction: column;
     }
 }
 
