@@ -70,6 +70,33 @@
   mask-type: alpha;
   filter: brightness(0.9);
 }
+@media screen and (max-width: 769px) {
+    .main_img_dat p {
+        font-size: 35px;
+    }
+    .main_img_dat img{
+        scale: 2;
+        transform: translate(-25px, -85px);
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .main_img_dat p {
+        font-size: 40px;
+    }
+
+    .main_img_dat img {
+        transform: translate(-10%, -50%);
+        scale: 3;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main_img_dat img {
+        transform: translate(-10%, -80%);
+    }
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
